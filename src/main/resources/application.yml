@@ -1,0 +1,22 @@
+server:
+  port:8080
+
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/student
+    password: pass
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: create-drop
+welcome:
+  message:
+    config: welcome
+  management:
+    endpoints:
+      web:
+        exposure:
+          include:"*"
+
+
